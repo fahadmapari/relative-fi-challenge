@@ -15,7 +15,8 @@ const AssetCard = ({ asset }) => {
             asset.change < 0 ? "negative" : "positive"
           }`}
         >
-          {asset.change >= 0 && "+"} {asset.priceChange}%
+          {asset.priceChange >= 0 && "+"}
+          {asset.priceChange}%
         </span>
       </div>
       <p className="label">Price</p>

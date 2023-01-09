@@ -1,3 +1,7 @@
+Live: http://fahadmapari.github.io/relative-fi-challenge
+
+![alt text](https://i.imgur.com/s4a6z5D.png)
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

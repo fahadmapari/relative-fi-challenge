@@ -102,8 +102,14 @@ section{
   font-size: 1.5rem;
   background: #14172B;
   padding: 0.8rem 1.2rem;
-  border-radius: 25px;
   margin-top: 1rem;
+  border-image:  linear-gradient(#ECF0FF, #3B3F57
+  ) 10;
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 25px;
+  border-bottom: none;
+  border-left: none;
 }
 
 .change-indicator{

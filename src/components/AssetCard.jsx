@@ -12,7 +12,7 @@ const AssetCard = ({ asset }) => {
         {asset.price}{" "}
         <span
           className={`change-indicator ${
-            asset.change < 0 ? "negative" : "positive"
+            asset.priceChange < 0 ? "negative" : "positive"
           }`}
         >
           {asset.priceChange >= 0 && "+"}

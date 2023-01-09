@@ -1,22 +1,23 @@
 import React from "react";
-import iconImage from "../assets/bitcoinsv.png";
 import Pairs from "./Pairs";
 
-const AssetCard = () => {
+const AssetCard = ({asset}) => {
+  console.log(asset.popularPairs);
   return (
     <div className="asset-card">
       <div className="asset-icon">
-        <img className="asset-icon-image" src={iconImage} alt="icon" />
+        <img className="asset-icon-image" src={asset.assetIcon} alt="icon" />
       </div>
-      <p className="label">BITCOIN (BTC)</p>
+      <p className="label">{asset.assetName}</p>
       <div className="amount-container">
-        $31,812.80 <span className="change-indicator positive">+10</span>
+        {asset.price} <span className={`change-indicator ${asset.change < 0 ? 'negative' : 'positive'}`}> {asset.change >= 0 && '+'} {asset.change}%</span>
       </div>
       <p className="label">Price</p>
-      <div className="amount-container">$60,000</div>
+      <div className="amount-container">{asset.tvl}</div>
       <p className="label">TVL</p>
 
-      <Pairs />
+      
+      <Pairs pairs={asset.popularPairs} />
       <p className="label">Popular Pairs</p>
     </div>
   );

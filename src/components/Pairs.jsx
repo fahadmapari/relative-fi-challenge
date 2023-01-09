@@ -1,22 +1,16 @@
 import React from "react";
-import pair1 from "../assets/Ethereum.png";
-import pair2 from "../assets/Binance Coin.png";
-import pair3 from "../assets/Bitcoin SV.png";
 
-const Pairs = () => {
+
+const Pairs = ({pairs}) => {
+  
   return (
     <div className="amount-container pair-container">
-      <div className="pair">
-        <img src={pair1} alt="" />
-      </div>
+      {pairs.map(((pair, index) => (
+        <div className="pair" key={index}>
+          <img src={pair} alt="icon" />
+        </div>
+      )))}
 
-      <div className="pair">
-        <img src={pair2} alt="" />
-      </div>
-
-      <div className="pair">
-        <img src={pair3} alt="" />
-      </div>
     </div>
   );
 };

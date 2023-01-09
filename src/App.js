@@ -1,11 +1,11 @@
-import AssetCard from "./components/AssetCard";
+import CardList from "./components/CardList";
 import SectionHeading from "./components/SectionHeading";
 
 function App() {
   return (
     <section>
       <SectionHeading />
-      <AssetCard />
+      <CardList />
     </section>
   );
 }

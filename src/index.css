@@ -103,19 +103,21 @@ section{
   background: #14172B;
   padding: 0.8rem 1.2rem;
   margin-top: 1rem;
-  border-image:  linear-gradient(#ECF0FF, #3B3F57
-  ) 10;
-  border-width: 1px;
-  border-style: solid;
   border-radius: 25px;
-  border-bottom: none;
-  border-left: none;
 }
 
 .change-indicator{
   margin-left: 0.5rem;
   font-size: 1.2rem;
   font-weight: 500;
+}
+
+.change-indicator.positive{
+  color: #00FFA3;
+}
+
+.change-indicator.negative{
+  color: #FF4D4D;
 }
 
 .pair-container{
